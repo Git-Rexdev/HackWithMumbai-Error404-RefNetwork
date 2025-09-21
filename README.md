@@ -102,8 +102,7 @@ RefNetwork/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/RefNetwork.git
-   cd RefNetwork
+   git clone https://github.com/Git-Rexdev/RefNetwork.git
    ```
 2. **Backend Setup**
 
@@ -111,7 +110,6 @@ RefNetwork/
    cd Backend
    npm install
    cp .env.example .env
-   # Configure your environment variables
    npm run dev
    ```
 3. **Frontend Setup**
@@ -120,7 +118,6 @@ RefNetwork/
    cd Frontend
    npm install
    cp .env.example .env
-   # Configure your environment variables
    npm start
    ```
 4. **AI Models Setup**
