@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Verification OTP</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f9fc;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      h1 {
+        color: #2a9d8f;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        margin: 5px 0;
+      }
+      .otp {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        color: #e63946;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .footer {
+        font-size: 14px;
+        color: #666;
+        margin-top: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Email Verification</h1>
+      <p>Hello,</p>
+      <p>We received a request to verify your email for the <b>Job Referral Portal</b>. Please use the OTP below to complete your verification:</p>
+
+      <div class="otp">{{otp}}</div>
+
+      <p>This OTP is valid for <b>5 minutes</b>. If you didn’t request this, you can safely ignore this email.</p>
+
+      <div class="footer">
+        &copy; {{year}} Job Referral Portal. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

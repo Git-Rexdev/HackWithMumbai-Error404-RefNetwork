@@ -1,0 +1,276 @@
+@keyframes blackGlowBreathing {
+  0% {
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.18), 0 0 12px 3px rgba(0,0,0,0.10);
+  }
+  50% {
+    box-shadow: 0 0 16px 5px rgba(0,0,0,0.32), 0 0 20px 7px rgba(0,0,0,0.18);
+  }
+  100% {
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.18), 0 0 12px 3px rgba(0,0,0,0.10);
+  }
+}
+
+@keyframes blueGlowBreathing {
+  0% {
+    box-shadow: 0 0 8px 2px rgba(30,136,229,0.4), 0 0 12px 3px rgba(30,136,229,0.2);
+  }
+  50% {
+    box-shadow: 0 0 16px 5px rgba(30,136,229,0.7), 0 0 20px 7px rgba(30,136,229,0.3);
+  }
+  100% {
+    box-shadow: 0 0 8px 2px rgba(30,136,229,0.4), 0 0 12px 3px rgba(30,136,229,0.2);
+  }
+}
+
+
+.breathing-blue-glow {
+  animation: blackGlowBreathing 7s ease-in-out infinite;
+}
+
+html.dark .breathing-blue-glow, :root.dark .breathing-blue-glow {
+  animation: blueGlowBreathing 7s ease-in-out infinite;
+}
+@keyframes loadingbar {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+.animate-loadingbar {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  animation: loadingbar 1.2s linear infinite;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 14%;
+    --ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftFade {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightFade {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80% {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Animation Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.5s ease-in;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out;
+}
+
+.animate-slideUpFade {
+  animation: slideUpFade 0.6s ease-out;
+}
+
+.animate-slideDownFade {
+  animation: slideDownFade 0.6s ease-out;
+}
+
+.animate-slideLeftFade {
+  animation: slideLeftFade 0.6s ease-out;
+}
+
+.animate-slideRightFade {
+  animation: slideRightFade 0.6s ease-out;
+}
+
+.animate-pageEnter {
+  animation: pageEnter 0.7s ease-out;
+}
+
+.animate-bounceIn {
+  animation: bounceIn 1s ease-out;
+}
+
+/* Animation Delays */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Ensure smooth transitions for theme changes */
+  * {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+}
