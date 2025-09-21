@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2025 Team Error 404
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Project Information:
+- Event: HackWithMumbai 2025
+- Institution: BVUDET Navi Mumbai
+- Team: Error 404
+- Contact: zanwarmanmohan@gmail.com
+- LinkedIn: www.linkedin.com/in/developer-manmohan
+
+Project Description:
+RefNetwork - A comprehensive job referral portal with AI-powered features for resume analysis, keyword optimization, and career roadmap generation. Built with MERN stack and integrated AI models for enhanced user experience.
+
+Tech Stack:
+- Frontend: React, TypeScript, Tailwind CSS
+- Backend: Node.js, Express.js, MongoDB
+- AI Models: Python, FastAPI, LangChain, OpenAI
+- Authentication: JWT, OTP verification
+- Additional: Multer, Nodemailer, Axios
